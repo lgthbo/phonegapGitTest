@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1021001302276",
+    "firebase_url": "https://anscard-web-164b0.firebaseio.com",
+    "project_id": "anscard-web-164b0",
+    "storage_bucket": "anscard-web-164b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021001302276:android:701fc1a997889011",
+        "android_client_info": {
+          "package_name": "com.ansforce.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021001302276-3dbmch2ak6d77gluk4bomushuku5rage.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj-GcfD7nXkjdnisPGcDn69QktjvRE-5k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,64 +8,18 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
-
-    </script>
-    <script>
-    
-function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-    }
-
-    // device APIs are available
-    //
-function onDeviceReady() {
-        // Now safe to use device APIs
-    console.log('hihihi');
-        window.FirebasePlugin.onTokenRefresh(function(token) {
-            // save this server-side and use it to push notifications to this device
-            
-            console.log(token);
-          
-        }, function(error) {
-            console.error(error);
-        });
-     
-        
-}
-function getToken(){
-  
-  console.log(window.FirebasePlugin);
-
-  window.FirebasePlugin.getToken(function(token) {
-    // save this server-side and use it to push notifications to this device
-    console.log(token);
-}, function(error) {
-    console.error(error);
-});
-
-}
-function tokenRefresh(){
-    window.FirebasePlugin.onTokenRefresh(function(token) {
-    // save this server-side and use it to push notifications to this device
-    console.log(token);
-    }, function(error) {
-    console.error(error);
-    }); 
-     
-}
-
-function statusBarHide(){
-    
-    
-    StatusBar.hide();
-}
-    </script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
+    <!--<script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>-->
 </head>
 <body onload="onLoad()">
 
-    <h1>Welcome to Monaca!</h1>
-    <button class="button--large" onclick="getToken()">getToken</button>
-    <button class="button--large" onclick="tokenRefresh()">getTokenRefresh</button>
-    <button class="button--large" onclick="statusBarHide()">statusBarHide</button>
+    <h1 data-i18n="title.welcome">Welcome to Monaca!</h1>
+    <button class="button--large" onclick="getToken()">get Token</button>
+    <button class="button--large" onclick="tokenRefresh()">get Token Refresh</button>
+    <button class="button--large" onclick="statusBarHide()">status Bar Hide</button>
+    <button class="button--large" onclick="changeLanguage()">change Language</button>
+    <button class="button--large" onclick="shareDemo()">share Demo</button>
 </body>
 </html>

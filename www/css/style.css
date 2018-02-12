@@ -72,6 +72,7 @@ h1 {
   padding: 4px 20px;
   display: block;
   width: 100%;
+  margin: 10px 0;
 }
 .button--large:active {
   background-color: #1284ff;

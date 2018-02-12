@@ -47,10 +47,21 @@ function statusBarHide(){
 }
 
 function changeLanguage(){
-    if(lang=='tw'){
-        lang='en';
+    if(lng=='tw'){
+        lng='en';
     }else{
-        lang='tw';
+        lng='tw';
     }
+        i18next.changeLanguage(lng,'');
       $("[data-i18n]").localize();
 }
+    function shareDemo() {
+      window.plugins.share.show(
+          {
+              subject: 'Line測試',
+              text: 'email:lgthbo@gmail.com'
+          },
+          function() {}, // Success function
+          function() {alert('Share failed')} // Failure function
+      );
+    }
